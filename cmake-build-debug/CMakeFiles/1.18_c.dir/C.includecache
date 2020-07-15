@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/akide/CLionProjects/Cpp/SelfLearning/1.18_c.c
+stdio.h
+-
+1.18_head.h
+/Users/akide/CLionProjects/Cpp/SelfLearning/1.18_head.h
+
+/Users/akide/CLionProjects/Cpp/SelfLearning/1.18_head.h
+

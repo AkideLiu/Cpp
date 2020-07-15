@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.16)
+project(Cpp)
+
+add_definitions(-Wall)
+set(CMAKE_CXX_STANDARD 11)
+
+add_executable(Cpp main.cpp)
+add_executable(1.4 SelfLearning/1.4.cpp)
+add_executable(1.5.1 SelfLearning/1.5.1.cpp)
+add_executable(1.6.1 SelfLearning/1.6.1.cpp)
+add_executable(1.16.1 SelfLearning/1.16.1.cpp)
+#add_executable(1.18 SelfLearning/1.18.h)
+
+add_executable(1.18_head SelfLearning/1.18_head.h)
+add_executable(1.18_cpp SelfLearning/1.18_cpp.cpp)
+add_executable(1.18_c SelfLearning/1.18_c.c)

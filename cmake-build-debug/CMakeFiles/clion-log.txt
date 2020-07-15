@@ -1,0 +1,6 @@
+"/Users/akide/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/201.7846.88/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/akide/CLionProjects/Cpp
+-- Configuring done
+CMake Error: Cannot determine link language for target "1.18_head".
+CMake Error: CMake can not determine linker language for target: 1.18_head
+-- Generating done
+CMake Generate step failed.  Build files cannot be regenerated correctly.

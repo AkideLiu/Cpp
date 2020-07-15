@@ -1,0 +1,10 @@
+/Users/akide/CLionProjects/Cpp/cmake-build-debug/CMakeFiles/1.18_cpp.dir
+/Users/akide/CLionProjects/Cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/akide/CLionProjects/Cpp/cmake-build-debug/CMakeFiles/1.18_head.dir
+/Users/akide/CLionProjects/Cpp/cmake-build-debug/CMakeFiles/1.16.1.dir
+/Users/akide/CLionProjects/Cpp/cmake-build-debug/CMakeFiles/1.5.1.dir
+/Users/akide/CLionProjects/Cpp/cmake-build-debug/CMakeFiles/1.6.1.dir
+/Users/akide/CLionProjects/Cpp/cmake-build-debug/CMakeFiles/1.18_c.dir
+/Users/akide/CLionProjects/Cpp/cmake-build-debug/CMakeFiles/1.4.dir
+/Users/akide/CLionProjects/Cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/akide/CLionProjects/Cpp/cmake-build-debug/CMakeFiles/Cpp.dir

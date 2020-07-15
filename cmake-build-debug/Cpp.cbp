@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Cpp"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/akide/CLionProjects/Cpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.18_cpp">
+				<Option output="/Users/akide/CLionProjects/Cpp/cmake-build-debug/1.18_cpp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/akide/CLionProjects/Cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 1.18_cpp"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.18_cpp/fast">
+				<Option output="/Users/akide/CLionProjects/Cpp/cmake-build-debug/1.18_cpp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/akide/CLionProjects/Cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 1.18_cpp/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/akide/CLionProjects/Cpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.18_head">
+				<Option output="/Users/akide/CLionProjects/Cpp/cmake-build-debug/1.18_head" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/akide/CLionProjects/Cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 1.18_head"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.18_head/fast">
+				<Option output="/Users/akide/CLionProjects/Cpp/cmake-build-debug/1.18_head" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/akide/CLionProjects/Cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 1.18_head/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.16.1">
+				<Option output="/Users/akide/CLionProjects/Cpp/cmake-build-debug/1.16.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/akide/CLionProjects/Cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 1.16.1"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.16.1/fast">
+				<Option output="/Users/akide/CLionProjects/Cpp/cmake-build-debug/1.16.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/akide/CLionProjects/Cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 1.16.1/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.5.1">
+				<Option output="/Users/akide/CLionProjects/Cpp/cmake-build-debug/1.5.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/akide/CLionProjects/Cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 1.5.1"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.5.1/fast">
+				<Option output="/Users/akide/CLionProjects/Cpp/cmake-build-debug/1.5.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/akide/CLionProjects/Cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 1.5.1/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.6.1">
+				<Option output="/Users/akide/CLionProjects/Cpp/cmake-build-debug/1.6.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/akide/CLionProjects/Cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 1.6.1"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.6.1/fast">
+				<Option output="/Users/akide/CLionProjects/Cpp/cmake-build-debug/1.6.1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/akide/CLionProjects/Cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 1.6.1/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.18_c">
+				<Option output="/Users/akide/CLionProjects/Cpp/cmake-build-debug/1.18_c" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/akide/CLionProjects/Cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 1.18_c"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.18_c/fast">
+				<Option output="/Users/akide/CLionProjects/Cpp/cmake-build-debug/1.18_c" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/akide/CLionProjects/Cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 1.18_c/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.4">
+				<Option output="/Users/akide/CLionProjects/Cpp/cmake-build-debug/1.4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/akide/CLionProjects/Cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 1.4"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1.4/fast">
+				<Option output="/Users/akide/CLionProjects/Cpp/cmake-build-debug/1.4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/akide/CLionProjects/Cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 1.4/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/akide/CLionProjects/Cpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Cpp">
+				<Option output="/Users/akide/CLionProjects/Cpp/cmake-build-debug/Cpp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/akide/CLionProjects/Cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 Cpp"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Cpp/fast">
+				<Option output="/Users/akide/CLionProjects/Cpp/cmake-build-debug/Cpp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/akide/CLionProjects/Cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 Cpp/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/Cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/akide/CLionProjects/Cpp/SelfLearning/1.16.1.cpp">
+			<Option target="1.16.1"/>
+		</Unit>
+		<Unit filename="/Users/akide/CLionProjects/Cpp/SelfLearning/1.18_c.c">
+			<Option target="1.18_c"/>
+		</Unit>
+		<Unit filename="/Users/akide/CLionProjects/Cpp/SelfLearning/1.18_cpp.cpp">
+			<Option target="1.18_cpp"/>
+		</Unit>
+		<Unit filename="/Users/akide/CLionProjects/Cpp/SelfLearning/1.18_head.h">
+			<Option target="1.18_head"/>
+		</Unit>
+		<Unit filename="/Users/akide/CLionProjects/Cpp/SelfLearning/1.4.cpp">
+			<Option target="1.4"/>
+		</Unit>
+		<Unit filename="/Users/akide/CLionProjects/Cpp/SelfLearning/1.5.1.cpp">
+			<Option target="1.5.1"/>
+		</Unit>
+		<Unit filename="/Users/akide/CLionProjects/Cpp/SelfLearning/1.6.1.cpp">
+			<Option target="1.6.1"/>
+		</Unit>
+		<Unit filename="/Users/akide/CLionProjects/Cpp/main.cpp">
+			<Option target="Cpp"/>
+		</Unit>
+		<Unit filename="/Users/akide/CLionProjects/Cpp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
