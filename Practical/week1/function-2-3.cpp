@@ -8,19 +8,32 @@
 #include <iostream>
 using namespace std;
 
-int maximum(int array[], int n){
-    if ( n < 1 ) {
-        return 0;
+void twofivenine(int array[], int n) {
+    if (n < 1) {
+        cout << "" << endl;
     }
 
-    int max = array[0];
+    int disArray[3] = {0, 0, 0};
 
     for (int i = 0; i < n; ++i) {
-        if (array[i] > max) {
-            max = array[i];
+        switch (array[i]) {
+            case 2:
+                disArray[0]++;
+                break;
+            case 5:
+                disArray[1]++;
+                break;
+            case 9:
+                disArray[2]++;
+                break;
         }
     }
+    cout << "2:" << disArray[0]
+         << ";5:" << disArray[1]
+         << ";9:" << disArray[2]
+         << ";"
+         << endl;
 
-    return max;
+    // cout << "" << endl;
 }
 

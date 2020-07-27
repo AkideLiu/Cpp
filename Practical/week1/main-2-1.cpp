@@ -9,12 +9,14 @@
 #include <iostream>
 using namespace std;
 
-extern int count_even(int number);
+extern int minimum(int array[], int n);
 
 int main() {
 
-    int count_n = count_even(15);
-    cout << count_n << endl;
+    int array[15] = {3, 4, 5, 9, 4, 6, 7, 8, 2, 1, 3, 4, 5, 6, 3};
+
+    int min = minimum(array,15);
+    cout << min << endl;
 
     return 0;
 }

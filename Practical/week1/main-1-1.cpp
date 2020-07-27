@@ -6,3 +6,16 @@
 
 //
 
+#include <iostream>
+
+
+extern int sum_array(int array[], int n);
+using namespace std;
+
+int main(){
+    int array[3] = {3, 4, 5};
+    int sum = sum_array(array, 3);
+    cout << sum << endl;
+
+    return 0;
+}

@@ -9,17 +9,13 @@
 #include <iostream>
 using namespace std;
 
-extern int median(int array[], int n);
+extern double weightedaverage(int array[], int n);
 
 int main() {
 
-    int array[5] = {3, 5, 1, 2, 4};
-    int array1[4] = {2, 4, 4, 2};
-    int array2[5] = {1, 2, 1, 2, 1};
+    int array[6] = {1,2,1,4,1,3};
 
-    cout << median(array, 5) << endl;
-    cout << median(array1, 4) << endl;
-    cout << median(array2, 5) << endl;
+    cout << weightedaverage(array, 6) << endl;
 
     return 0;
 }

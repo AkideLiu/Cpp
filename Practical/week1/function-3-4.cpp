@@ -11,29 +11,21 @@
 
 using namespace std;
 
-double weightedaverage(int array[], int n) {
-    if (n < 1) {
-        return 0;
+void passorfail(char grade) {
+
+    switch (grade) {
+        case 'A':
+        case 'B':
+        case 'C':
+            cout << "Pass" << endl;
+            break;
+        case 'D':
+        case 'E':
+            cout << "Fail" << endl;
+            break;
+        default:
+            cout << "Nothing" << endl;
     }
 
-    int *countArray = (int *) malloc(sizeof(int) * n);
-
-    for (int i = 0; i < n; ++i) {
-
-        countArray[i] = 0;
-
-        for (int j = 0; j < n; ++j) {
-            if (array[j] == array[i]) {
-                countArray[i] += 1;
-            }
-        }
-    }
-
-    double result = 0;
-    for (int i = 0; i < n; ++i) {
-        result += (double (array[i] * countArray[i]) / n);
-    }
-
-    return result;
 
 }

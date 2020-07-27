@@ -9,17 +9,17 @@
 #include <iostream>
 using namespace std;
 
-extern bool fanarray(int array[], int n);
+extern int median(int array[], int n);
 
 int main() {
 
-    int array[5] = {1, 2, 3, 2, 1};
+    int array[5] = {3, 5, 1, 2, 4};
     int array1[4] = {2, 4, 4, 2};
     int array2[5] = {1, 2, 1, 2, 1};
 
-    cout << fanarray(array, 5) << endl;
-    cout << fanarray(array1, 4) << endl;
-    cout << fanarray(array2, 5) << endl;
+    cout << median(array, 5) << endl;
+    cout << median(array1, 4) << endl;
+    cout << median(array2, 5) << endl;
 
     return 0;
 }

@@ -9,13 +9,15 @@
 #include <iostream>
 using namespace std;
 
-extern bool ascending(int array[], int n);
+extern bool descending(int array[], int n);
 
 int main() {
 
-    int array[15] = {3, 4, 5, 9, 4, 6, 7, 8, 2, 1, 3, 4, 5, 6, 3};
+    int array[6] = {6,4,3,2,1,1};
+    int array1[6] = {1,2,2,3,4,5};
 
-    cout << ascending(array, 15) << endl;
+    cout << descending(array, 6) << endl;
+    cout << descending(array1, 6) << endl;
     
     return 0;
 }

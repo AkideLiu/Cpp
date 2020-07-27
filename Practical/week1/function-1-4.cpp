@@ -8,17 +8,19 @@
 #include <iostream>
 using namespace std;
 
-int count(int array[], int n, int number) {
+int sumtwo(int array[], int secondarray[], int n) {
+
     if ( n < 1 ) {
         return 0;
     }
 
-    int count = 0;
+    int sum = 0;
+
     for (int i = 0; i < n; ++i) {
-        if (array[i] == number) {
-            count++;
-        }
+
+        sum += (array[i] + secondarray[i]);
+
     }
 
-    return count;
+    return sum;
 }

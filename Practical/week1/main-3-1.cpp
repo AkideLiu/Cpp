@@ -9,13 +9,17 @@
 #include <iostream>
 using namespace std;
 
-extern bool descending(int array[], int n);
+extern bool fanarray(int array[], int n);
 
 int main() {
 
-    int array[15] = {3, 4, 5, 9, 4, 6, 7, 8, 2, 1, 3, 4, 5, 6, 3};
+    int array[5] = {1, 2, 3, 2, 1};
+    int array1[4] = {2, 4, 4, 2};
+    int array2[5] = {1, 2, 1, 2, 1};
 
-    cout << descending(array, 15) << endl;
-    
+    cout << fanarray(array, 5) << endl;
+    cout << fanarray(array1, 4) << endl;
+    cout << fanarray(array2, 5) << endl;
+
     return 0;
 }

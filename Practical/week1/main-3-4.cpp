@@ -9,13 +9,14 @@
 #include <iostream>
 using namespace std;
 
-extern double weightedaverage(int array[], int n);
+extern void passorfail(char grade);
 
 int main() {
 
-    int array[6] = {1,2,1,4,1,3};
+    char array[7] = {'A','B','C','D','E','F','S'};
 
-    cout << weightedaverage(array, 6) << endl;
-
+    for (int i = 0; i < 7; ++i) {
+        passorfail(array[i]);
+    }
     return 0;
 }

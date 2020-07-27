@@ -9,14 +9,12 @@
 #include <iostream>
 using namespace std;
 
-extern void passorfail(char grade);
+extern double sumeven(double array[], int n);
 
 int main() {
 
-    char array[7] = {'A','B','C','D','E','F','S'};
+    double array[5] = {3.1, 5.3, 1.4, 2.5, 4.1};
 
-    for (int i = 0; i < 7; ++i) {
-        passorfail(array[i]);
-    }
+    cout << sumeven(array, 5) << endl;
     return 0;
 }

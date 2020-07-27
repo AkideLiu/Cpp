@@ -8,14 +8,14 @@
 #include <iostream>
 using namespace std;
 
-bool ascending(int array[], int n) {
+bool descending(int array[], int n) {
     if (n < 1) {
         return false;
     }
 
-    for (int i = 0; i < n -1; ++i) {
-        if (array[i] <= array[i + 1]) {
-
+    for (int i = 0; i < n - 1 ; ++i) {
+        if (array[i] >= array[i + 1]) {
+        // true
         } else {
             return false;
         }

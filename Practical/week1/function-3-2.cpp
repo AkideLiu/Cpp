@@ -9,26 +9,31 @@
 #include <cmath>
 using namespace std;
 
-bool fanarray(int array[], int n) {
-    if (n < 1) {
-        return false;
-    }
 
-
-    //ceil will count down digital
-    //in case i < middle number - 1
-    for (int i = 0; i < ceil(n/2); ++i) {
-        if (array[i] > array[i + 1]) {
-            return false;
-        }
-    }
-
-    for (int i = ceil(n/2); i < n-1; ++i) {
-        if (array[i] < array[i + 1]) {
-            return false;
-        }
-    }
-
-    return true;
+void swap(int array[], int i, int j) {
+    int temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
 }
 
+int median(int array[], int n) {
+    if (n < 1 || n % 2 == 0) {
+        return 0;
+    }
+
+    for (int i = 0; i < n; ++i) {
+
+        for (int j = i + 1; j < n; ++j) {
+
+            if (array[i] > array[j]) {
+
+                swap(array, j, i);
+
+            }
+        }
+    }
+
+    int middle = ceil(n / 2) ;
+    return array[middle];
+
+}

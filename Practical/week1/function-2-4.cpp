@@ -8,29 +8,19 @@
 #include <iostream>
 using namespace std;
 
-void twofivenine(int array[], int n) {
+bool ascending(int array[], int n) {
     if (n < 1) {
-        cout << "" << endl;
+        return false;
     }
 
-    int disArray[3] = {0, 0, 0};
+    for (int i = 0; i < n -1; ++i) {
+        if (array[i] <= array[i + 1]) {
 
-    for (int i = 0; i < n; ++i) {
-        switch (array[i]) {
-            case 2:
-                disArray[0]++;
-            case 5:
-                disArray[1]++;
-            case 9:
-                disArray[2]++;
+        } else {
+            return false;
         }
     }
-    cout << "2:" << disArray[0]
-         << ";5:" << disArray[1]
-         << ";9:" << disArray[2]
-         << ";"
-         << endl;
 
-    cout << "" << endl;
+    return true;
 }
 

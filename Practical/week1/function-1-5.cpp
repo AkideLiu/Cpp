@@ -8,19 +8,16 @@
 #include <iostream>
 using namespace std;
 
-int sumtwo(int array[], int secondarray[], int n) {
-
-    if ( n < 1 ) {
+int count_even(int number){
+    if ( number < 1 ) {
         return 0;
     }
-
-    int sum = 0;
-
-    for (int i = 0; i < n; ++i) {
-
-        sum += (array[i] + secondarray[i]);
-
+    int count = 0;
+    for (int i = 1; i <= number; ++i) {
+        if (i % 2 == 0) {
+            count++;
+        }
     }
-
-    return sum;
+    return count;
 }
+

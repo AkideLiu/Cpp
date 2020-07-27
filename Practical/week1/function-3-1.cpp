@@ -6,15 +6,25 @@
 
 //
 #include <iostream>
+#include <cmath>
 using namespace std;
 
-bool descending(int array[], int n) {
+bool fanarray(int array[], int n) {
     if (n < 1) {
         return false;
     }
 
-    for (int i = 0; i < n -1; ++i) {
-        if (array[i] <= array[i + 1]) {
+
+    //ceil will count down digital
+    //in case i < middle number - 1
+    for (int i = 0; i < ceil(n/2); ++i) {
+        if (array[i] > array[i + 1]) {
+            return false;
+        }
+    }
+
+    for (int i = ceil(n/2); i < n-1; ++i) {
+        if (array[i] < array[i + 1]) {
             return false;
         }
     }

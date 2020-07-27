@@ -9,14 +9,11 @@
 #include <iostream>
 using namespace std;
 
-extern int sumtwo(int array[], int secondarray[], int n);
+extern int count_even(int number);
 
 int main() {
-    int array[15] = {3, 4, 5, 3, 4, 6, 7, 8, 2, 1, 3, 4, 5, 6, 3};
-    int secondarray[15] = {3, 4, 5, 3, 4, 6, 7, 8, 2, 1, 3, 4, 5, 6, 3};
 
-
-    int count_n = sumtwo(array, secondarray, 15);
+    int count_n = count_even(15);
     cout << count_n << endl;
 
     return 0;

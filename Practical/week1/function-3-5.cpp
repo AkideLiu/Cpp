@@ -11,21 +11,19 @@
 
 using namespace std;
 
-void passorfail(char grade) {
+double sumeven(double array[], int n) {
 
-    switch (grade) {
-        case 'A':
-        case 'B':
-        case 'C':
-            cout << "Pass" << endl;
-            break;
-        case 'D':
-        case 'E':
-            cout << "Fail" << endl;
-            break;
-        default:
-            cout << "Nothing" << endl;
+    if (n < 1) {
+        return 0;
     }
 
+    double sum = 0;
+    for (int i = 0; i < n; ++i) {
+        if (i % 2 == 0) {
+            sum += array[i];
+        }
+    }
+
+    return sum;
 
 }

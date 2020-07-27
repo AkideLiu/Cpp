@@ -7,33 +7,33 @@
 //
 #include <iostream>
 #include <cmath>
+#include <cstdlib>
+
 using namespace std;
 
-
-void swap(int array[], int i, int j) {
-    int temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
-}
-
-int median(int array[], int n) {
+double weightedaverage(int array[], int n) {
     if (n < 1) {
         return 0;
     }
 
+    int *countArray = (int *) malloc(sizeof(int) * n);
+
     for (int i = 0; i < n; ++i) {
 
-        for (int j = i + 1; j < n; ++j) {
+        countArray[i] = 0;
 
-            if (array[i] > array[j]) {
-
-                swap(array, j, i);
-
+        for (int j = 0; j < n; ++j) {
+            if (array[j] == array[i]) {
+                countArray[i] += 1;
             }
         }
     }
 
-    int middle = ceil(n / 2) ;
+    double result = 0;
+    for (int i = 0; i < n; ++i) {
+        result += (double (array[i] * countArray[i]) / n);
+    }
 
-    return array[middle];
+    return result;
+
 }

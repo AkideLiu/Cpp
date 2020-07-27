@@ -9,14 +9,13 @@
 #include <iostream>
 using namespace std;
 
-extern int maximum(int array[], int n);
+extern void twofivenine(int array[], int n);
 
 int main() {
 
     int array[15] = {3, 4, 5, 9, 4, 6, 7, 8, 2, 1, 3, 4, 5, 6, 3};
 
-    int max = maximum(array, 15);
-    cout << max << endl;
+    twofivenine(array, 15);
 
     return 0;
 }

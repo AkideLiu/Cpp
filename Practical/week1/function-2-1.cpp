@@ -8,16 +8,19 @@
 #include <iostream>
 using namespace std;
 
-int count_even(int number){
-    if ( number < 1 ) {
+int minimum(int array[], int n){
+    if ( n < 1 ) {
         return 0;
     }
-    int count = 0;
-    for (int i = 1; i <= number; ++i) {
-        if (i % 2 == 0) {
-            count++;
+
+    int min = array[0];
+
+    for (int i = 0; i < n; ++i) {
+        if (array[i] < min) {
+            min = array[i];
         }
     }
-    return count;
+
+    return min;
 }
 
