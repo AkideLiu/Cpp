@@ -13,6 +13,4 @@ extern void print_as_binary(std::string decimal_number);
 using namespace std;
 
 int main(){
-    print_as_binary("123");
-    print_as_binary("6");
 }

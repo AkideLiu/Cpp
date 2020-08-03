@@ -13,17 +13,5 @@ extern int diagonal(int array[4][4]);
 using namespace std;
 
 int main(){
-    int array[4][4] = {};
-    int number = 0;
-
-    for (auto & i : array) {
-        for (int & j : i) {
-            j = number;
-            number++;
-        }
-    }
-
-    int sum = diagonal(array);
-    cout << sum << endl;
 
 }

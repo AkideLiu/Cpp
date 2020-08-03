@@ -14,15 +14,5 @@ extern void count_numbers(int array[4][4]);
 using namespace std;
 
 int main(){
-    int array[4][4] = {};
-
-    for (auto & i : array) {
-        for (int & j : i) {
-            j = rand() % 10;
-        }
-    }
-
-    count_numbers(array);
-
 
 }

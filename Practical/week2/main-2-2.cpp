@@ -13,11 +13,5 @@ extern int binary_to_number(int binary_digits[], int number_of_digits);
 using namespace std;
 
 int main(){
-    int array1[] = {1,2,1,0,1};
-    int array2[] = {1,0,0,1,0};
-    int array3[] = {0,0,1,1,1};
 
-    cout << binary_to_number(array1,5) << endl;
-    cout << binary_to_number(array2,5) << endl;
-    cout << binary_to_number(array3,5) << endl;
 }

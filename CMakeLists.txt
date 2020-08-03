@@ -72,7 +72,7 @@ include_directories(${googleTestDir}/googlemock/include)
 #https://my.oschina.net/miclewang/blog/1806435
 
 set(practical02_test
-        Practical/week2/practical02_test.cpp
+        Practical/Test/practical02_test.cpp
         Practical/week2/function-1-1.cpp
         Practical/week2/function-1-2.cpp
         Practical/week2/function-1-3.cpp

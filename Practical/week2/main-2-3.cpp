@@ -17,12 +17,5 @@ extern int sum_if_a_palindrome(int integers[], int length);
 using namespace std;
 
 int main(){
-    int array1[] = {1,2,-1,0,-5};
-    int array2[] = {1,0,0,1,0};
-    int array3[] = {1,2,0,2,1};
 
-    cout << sum_elements(array1,5) << endl;
-    cout << is_a_palindrome(array2,5) << endl;
-    cout << is_a_palindrome(array3,5) << endl;
-    cout << sum_if_a_palindrome(array3,5) << endl;
 }
