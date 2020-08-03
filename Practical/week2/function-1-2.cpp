@@ -10,13 +10,21 @@
 
 using namespace std;
 
-int diagonal(int array[4][4]){
+int identity(int array[10][10]){
 
-    int sum = 0;
+    int flag = 0;
     
-    for (int i = 0; i < 4; ++i) {
-        sum += array[i][i];
+    for (int i = 0; i < 10; ++i) {
+        if (array[i][i] != 1) {
+            return flag = 0;
+        }
+        for (int j = 0; j < 10; ++j) {
+            if (array[i][j] != 0 && i != j) {
+                return flag = 0;
+            }
+        }
     }
 
-    return sum;
+    flag = 1;
+    return flag;
 }

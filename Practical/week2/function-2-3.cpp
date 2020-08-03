@@ -9,30 +9,46 @@
 #include <iostream>
 #include <bitset>
 
+int GLOBAL_FLAG = 0;
 using namespace std;
 
-int binary_to_number(int binary_digits[], int number_of_digits){
+bool is_a_palindrome(int integers[], int length){
+    GLOBAL_FLAG = 0;
+    if (length < 1) {
+        GLOBAL_FLAG = -1;
+    }
 
-    bool flag = true;
-    if (number_of_digits >= 1 && number_of_digits <= 30) {
-        for (int i = 0; i < number_of_digits; ++i) {
-            if (binary_digits[i] != 0 && binary_digits[i] != 1) {
-                flag = false;
-                break;
-            }
+    for (int i = 0; i < length; ++i) {
+        if (integers[i] != integers[length - i - 1]) {
+            GLOBAL_FLAG = -2;
         }
     }
 
-    if (flag) {
-        int number = 0;
-        for (int i = 0; i < number_of_digits; ++i) {
-            number *= 10;
-            number += binary_digits[i];
-        }
+    return GLOBAL_FLAG >= 0;
+}
 
-        unsigned long result = bitset<30>(number).to_ulong();
-        return (int) result;
+int sum_if_a_palindrome(int integers[], int length){
+    is_a_palindrome(integers,length);
+    if (GLOBAL_FLAG < 0) {
+        return GLOBAL_FLAG;
     }
+    int sum = 0;
+    for (int i = 0; i < length; ++i) {
+        sum += integers[i];
+    }
+    return sum;
+}
 
-    return 0;
+
+
+int sum_elements(int integers[], int length) {
+    is_a_palindrome(integers,length);
+    if (GLOBAL_FLAG == -1) {
+        return GLOBAL_FLAG;
+    }
+    int sum = 0;
+    for (int i = 0; i < length; ++i) {
+        sum += integers[i];
+    }
+    return sum;
 }

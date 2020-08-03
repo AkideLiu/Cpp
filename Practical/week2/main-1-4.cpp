@@ -7,22 +7,15 @@
 //
 
 #include <iostream>
-#include <cmath>
 
-extern void count_numbers(int array[4][4]);
+extern void print_scaled_matrix(int array[3][3],int scale);
 
 using namespace std;
 
 int main(){
-    int array[4][4] = {};
-
-    for (auto & i : array) {
-        for (int & j : i) {
-            j = rand() % 10;
-        }
-    }
-
-    count_numbers(array);
+    int scale = 3 ;
+    int threebythree[3][3] = {{0,1,2},{3,4,5},{6,7,8}} ;
+    print_scaled_matrix(threebythree,scale) ;
 
 
 }

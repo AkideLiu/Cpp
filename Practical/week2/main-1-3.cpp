@@ -7,36 +7,22 @@
 //
 
 #include <iostream>
+#include <cmath>
 
-extern int identity(int array[10][10]);
+extern void count_numbers(int array[4][4]);
 
 using namespace std;
 
 int main(){
-    int array[10][10] = {};
-    int array2[10][10] = {};
-    int number = 1;
+    int array[4][4] = {};
 
     for (auto & i : array) {
         for (int & j : i) {
-            j = number;
-            number++;
+            j = rand() % 10;
         }
     }
 
-    for (int i = 0; i < 10; ++i) {
-        for (int j = 0; j < 10; ++j) {
-            if (i == j) {
-                array2[i][j] = 1;
-            } else {
-                array2[i][j] = 0;
-            }
-        }
-    }
+    count_numbers(array);
 
-
-
-    cout << identity(array) << endl;
-    cout << identity(array2) << endl;
 
 }

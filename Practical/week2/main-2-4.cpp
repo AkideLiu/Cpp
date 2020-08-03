@@ -8,11 +8,11 @@
 
 #include <iostream>
 
-extern int sum_elements(int integers[], int length);
+extern int sum_min_and_max(int integers[], int length);
 
-extern bool is_a_palindrome(int integers[], int length);
+extern int max_integer(int integers[], int length);
 
-extern int sum_if_a_palindrome(int integers[], int length);
+extern int min_integer(int integers[], int length);
 
 using namespace std;
 
@@ -21,8 +21,8 @@ int main(){
     int array2[] = {1,0,0,1,0};
     int array3[] = {1,2,0,2,1};
 
-    cout << sum_elements(array1,5) << endl;
-    cout << is_a_palindrome(array2,5) << endl;
-    cout << is_a_palindrome(array3,5) << endl;
-    cout << sum_if_a_palindrome(array3,5) << endl;
+    cout << sum_min_and_max(array1,5) << endl;
+    cout << max_integer(array2,5) << endl;
+    cout << min_integer(array3,5) << endl;
+    cout << sum_min_and_max(array3,5) << endl;
 }

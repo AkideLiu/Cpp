@@ -8,47 +8,37 @@
 
 #include <iostream>
 #include <bitset>
-
-int GLOBAL_FLAG = 0;
 using namespace std;
 
-bool is_a_palindrome(int integers[], int length){
-    GLOBAL_FLAG = 0;
-    if (length < 1) {
-        GLOBAL_FLAG = -1;
+int min_integer(int integers[], int length) {
+    if (length < 1 ) {
+        return -1;
     }
-
+    int min = integers[0];
     for (int i = 0; i < length; ++i) {
-        if (integers[i] != integers[length - i - 1]) {
-            GLOBAL_FLAG = -2;
+        if (integers[i] < min) {
+            min = integers[i];
         }
     }
-
-    return GLOBAL_FLAG >= 0;
+    return min;
 }
-
-int sum_if_a_palindrome(int integers[], int length){
-    is_a_palindrome(integers,length);
-    if (GLOBAL_FLAG < 0) {
-        return GLOBAL_FLAG;
+int max_integer(int integers[], int length) {
+    if (length < 1 ) {
+        return -1;
     }
-    int sum = 0;
+    int max = integers[0];
     for (int i = 0; i < length; ++i) {
-        sum += integers[i];
+        if (integers[i] > max) {
+            max = integers[i];
+        }
     }
-    return sum;
+    return max;
 }
-
-
-
-int sum_elements(int integers[], int length) {
-    is_a_palindrome(integers,length);
-    if (GLOBAL_FLAG == -1) {
-        return GLOBAL_FLAG;
+int sum_min_and_max(int integers[], int length) {
+    if (length < 1 ) {
+        return -1;
     }
-    int sum = 0;
-    for (int i = 0; i < length; ++i) {
-        sum += integers[i];
-    }
-    return sum;
+    int min = min_integer(integers, length);
+    int max = max_integer(integers, length);
+    return min + max;
 }

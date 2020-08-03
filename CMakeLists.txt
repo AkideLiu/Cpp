@@ -4,6 +4,16 @@ project(Cpp)
 add_definitions(-Wall)
 set(CMAKE_CXX_STANDARD 11)
 
+set(googleTestDir lib/googletest)
+
+#Add the google test subdirectory
+add_subdirectory(${googleTestDir})
+#include googletest/include dir
+include_directories(${googleTestDir}/googletest/include)
+#include the googlemock/include dir
+include_directories(${googleTestDir}/googlemock/include)
+
+
 #add_executable(Cpp main.cpp)
 #add_executable(1.4 SelfLearning/1.4.cpp)
 #add_executable(1.5.1 SelfLearning/1.5.1.cpp)
@@ -41,12 +51,39 @@ set(CMAKE_CXX_STANDARD 11)
 
 #practical 02
 
-add_executable(main-1-1 Practical/week2/main-1-1.cpp Practical/week2/function-1-1.cpp)
-add_executable(main-1-2 Practical/week2/main-1-2.cpp Practical/week2/function-1-2.cpp)
-add_executable(main-1-3 Practical/week2/main-1-3.cpp Practical/week2/function-1-3.cpp)
-add_executable(main-1-4 Practical/week2/main-1-4.cpp Practical/week2/function-1-4.cpp)
-add_executable(main-1-5 Practical/week2/main-1-5.cpp Practical/week2/function-1-5.cpp)
-add_executable(main-2-1 Practical/week2/main-2-1.cpp Practical/week2/function-2-1.cpp)
-add_executable(main-2-2 Practical/week2/main-2-2.cpp Practical/week2/function-2-2.cpp)
-add_executable(main-2-3 Practical/week2/main-2-3.cpp Practical/week2/function-2-3.cpp)
-add_executable(main-2-4 Practical/week2/main-2-4.cpp Practical/week2/function-2-4.cpp)
+#add_executable(main-1-1 Practical/week2/main-1-1.cpp Practical/week2/function-1-1.cpp)
+#add_executable(main-1-2 Practical/week2/main-1-2.cpp Practical/week2/function-1-2.cpp)
+#add_executable(main-1-3 Practical/week2/main-1-3.cpp Practical/week2/function-1-3.cpp)
+#add_executable(main-1-4 Practical/week2/main-1-4.cpp Practical/week2/function-1-4.cpp)
+#add_executable(main-1-5 Practical/week2/main-1-5.cpp Practical/week2/function-1-5.cpp)
+#add_executable(main-2-1 Practical/week2/main-2-1.cpp Practical/week2/function-2-1.cpp)
+#add_executable(main-2-2 Practical/week2/main-2-2.cpp Practical/week2/function-2-2.cpp)
+#add_executable(main-2-3 Practical/week2/main-2-3.cpp Practical/week2/function-2-3.cpp)
+#add_executable(main-2-4 Practical/week2/main-2-4.cpp Practical/week2/function-2-4.cpp)
+
+#TMP_TEST
+#add_executable(T001 tmp/T001.cpp Practical/week1/main-3-1.cpp)
+#add_executable(T002 tmp/T002.cpp Practical/week1/main-2-4.cpp)
+#add_executable(T003 tmp/T003.cpp Practical/week1/main-2-4.cpp)
+#add_executable(T003-t tmp/T003.cpp tmp/T004-main.cpp)
+#add_executable(T003-t1 Practical/week1/function-2-4.cpp tmp/T004-main.cpp)
+
+#GTest setup
+#https://my.oschina.net/miclewang/blog/1806435
+
+set(practical02_test
+        Practical/week2/practical02_test.cpp
+        Practical/week2/function-1-1.cpp
+        Practical/week2/function-1-2.cpp
+        Practical/week2/function-1-3.cpp
+        Practical/week2/function-1-4.cpp
+        Practical/week2/function-1-5.cpp
+        Practical/week2/function-2-1.cpp
+        Practical/week2/function-2-2.cpp
+        Practical/week2/function-2-3.cpp
+        Practical/week2/function-2-4.cpp
+        )
+
+add_executable(GTest ${practical02_test})
+target_link_libraries(GTest gtest gtest_main)
+target_link_libraries(GTest gmock gmock_main)

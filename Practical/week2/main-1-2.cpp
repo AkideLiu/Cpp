@@ -8,13 +8,14 @@
 
 #include <iostream>
 
-extern int diagonal(int array[4][4]);
+extern int identity(int array[10][10]);
 
 using namespace std;
 
 int main(){
-    int array[4][4] = {};
-    int number = 0;
+    int array[10][10] = {};
+    int array2[10][10] = {};
+    int number = 1;
 
     for (auto & i : array) {
         for (int & j : i) {
@@ -23,7 +24,19 @@ int main(){
         }
     }
 
-    int sum = diagonal(array);
-    cout << sum << endl;
-    
+    for (int i = 0; i < 10; ++i) {
+        for (int j = 0; j < 10; ++j) {
+            if (i == j) {
+                array2[i][j] = 1;
+            } else {
+                array2[i][j] = 0;
+            }
+        }
+    }
+
+
+
+    cout << identity(array) << endl;
+    cout << identity(array2) << endl;
+
 }

@@ -7,23 +7,14 @@
 //
 
 #include <iostream>
+#include <bitset>
 
 using namespace std;
 
-void print_summed_matrices(int array1[3][3],int array2[3][3]){
-
-    int **result = new(nothrow) int *[3];
-    for (int i = 0; i < 3; ++i) {
-        result[i] = new(nothrow) int[3];
+void print_as_binary(std::string decimal_number){
+    if (decimal_number.length() >= 1 && decimal_number.length() <= 9) {
+        int formatted_dec = stoi(decimal_number);
+        string binary = bitset<10>(formatted_dec).to_string();
+        cout << stoi(binary) << endl;
     }
-
-    for (int i = 0; i < 3; ++i) {
-        for (int j = 0; j < 3; ++j) {
-            result[i][j] = array1[i][j] + array2[i][j];
-            cout << result[i][j] << " " << ends;
-        }
-        cout << endl;
-    }
-
-    delete[] result;
 }

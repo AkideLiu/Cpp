@@ -9,7 +9,7 @@
 #include <iostream>
 using namespace std;
 
-extern bool ascending(int array[], int n);
+// extern bool ascending(int array[], int n);
 
 int main() {
 

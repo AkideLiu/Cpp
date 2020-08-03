@@ -6,25 +6,31 @@
 
 //
 
-#include <cstdlib>
+#include <iostream>
 
 using namespace std;
 
-int identity(int array[10][10]){
+void count_numbers(int array[4][4]){
 
-    int flag = 0;
-    
+    //http://www.cplusplus.com/doc/tutorial/dynamic/
+    int *count_array = new(nothrow) int[10];
+
     for (int i = 0; i < 10; ++i) {
-        if (array[i][i] != 1) {
-            return flag = 0;
-        }
-        for (int j = 0; j < 10; ++j) {
-            if (array[i][j] != 0 && i != j) {
-                return flag = 0;
+        count_array[i] = 0;
+    }
+
+    for (int i = 0; i < 4; ++i) {
+        for (int j = 0; j < 4; ++j) {
+            if (array[i][j] <= 9 && array[i][j] >= 0) {
+                count_array[array[i][j]]++;
             }
         }
     }
 
-    flag = 1;
-    return flag;
+    for (int i = 0; i < 10; ++i) {
+        cout << i << ":" << count_array[i] << ";";
+    }
+    cout << endl;
+    delete[] count_array;
+
 }
