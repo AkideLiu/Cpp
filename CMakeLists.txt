@@ -70,20 +70,32 @@ include_directories(${googleTestDir}/googlemock/include)
 
 #GTest setup
 #https://my.oschina.net/miclewang/blog/1806435
+#https://www.jetbrains.com/help/clion/creating-google-test-run-debug-configuration-for-test.html#code-gen-menu
 
-set(practical02_test
-        Practical/Test/practical02_test.cpp
-        Practical/week2/function-1-1.cpp
-        Practical/week2/function-1-2.cpp
-        Practical/week2/function-1-3.cpp
-        Practical/week2/function-1-4.cpp
-        Practical/week2/function-1-5.cpp
-        Practical/week2/function-2-1.cpp
-        Practical/week2/function-2-2.cpp
-        Practical/week2/function-2-3.cpp
-        Practical/week2/function-2-4.cpp
-        )
+#set(practical02_test
+#        Practical/Test/practical02_test.cpp
+#        Practical/week2/function-1-1.cpp
+#        Practical/week2/function-1-2.cpp
+#        Practical/week2/function-1-3.cpp
+#        Practical/week2/function-1-4.cpp
+#        Practical/week2/function-1-5.cpp
+#        Practical/week2/function-2-1.cpp
+#        Practical/week2/function-2-2.cpp
+#        Practical/week2/function-2-3.cpp
+#        Practical/week2/function-2-4.cpp
+#        )
 
-add_executable(GTest ${practical02_test})
+#add_executable(GTest ${practical02_test})
+
+
+#add_executable(transform workshop/week2/transform.cpp)
+#add_executable(arithmetic workshop/week2/arithmetic.cpp)
+#add_executable(T005 tmp/T005.cpp)
+#add_executable(function-1-1 workshop/week3/function-1-1.cpp)
+set(workshop_3_test
+        Test/workshop-3-test.cpp
+        workshop/week3/function-1-1.cpp
+        workshop/week3/function-1-2.cpp)
+add_executable(GTest ${workshop_3_test})
 target_link_libraries(GTest gtest gtest_main)
 target_link_libraries(GTest gmock gmock_main)
