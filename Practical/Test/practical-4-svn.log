@@ -1,0 +1,39 @@
+Looking for file main-1-1.cpp - found it.
+Looking for file function-1-1.cpp - found it.
+Compiling program test-1-1 using "g++ -I. -O0 -o test-1-1  main-1-1.cpp function-1-1.cpp" - it compiles.
+Compiling program test-1-1 using "g++ -I. -O0 -o test-1-1  test-1-1.cpp function-1-1.cpp" - it compiles.
+Testing program1-1 - passed.
+-----
+Looking for file main-1-3.cpp - found it.
+Looking for file function-1-3.cpp - found it.
+Compiling program test-1-3 using "g++ -I. -O0 -o test-1-3  main-1-3.cpp function-1-3.cpp" - it compiles.
+Compiling program test-1-3 using "g++ -I. -O0 -o test-1-3  test-1-3.cpp function-1-3.cpp" - it compiles.
+Testing program1-3 - passed.
+Testing program1-3 - passed.
+-----
+Looking for file main-1-4.cpp - found it.
+Looking for file function-1-4.cpp - found it.
+Compiling program test-1-4 using "g++ -I. -O0 -o test-1-4  main-1-4.cpp function-1-4.cpp" - it compiles.
+Compiling program test-1-4 using "g++ -I. -O0 -o test-1-4  test-1-4.cpp function-1-4.cpp" - it compiles.
+Testing program1-4 - passed.
+-----
+Looking for file main-2-1.cpp - found it.
+Looking for file function-2-1.cpp - found it.
+Compiling program test-2-1 using "g++ -I. -O0 -o test-2-1  main-2-1.cpp function-2-1.cpp" - it compiles.
+Compiling program test-2-1 using "g++ -I. -O0 -o test-2-1  test-2-1.cpp function-2-1.cpp" - it compiles.
+Testing program2-1 - passed.
+Testing program2-1 - passed.
+Testing program2-1 - passed.
+Testing program2-1 - passed.
+-----
+Looking for file main-2-2.cpp - found it.
+Looking for file function-2-2.cpp - found it.
+Compiling program test-2-2 using "g++ -I. -O0 -o test-2-2  main-2-2.cpp function-2-2.cpp" - it compiles.
+Compiling program test-2-2 using "g++ -I. -O0 -o test-2-2  test-2-2.cpp function-2-2.cpp" - it compiles.
+Testing program2-2 - passed.
+Testing program2-2 - passed.
+Testing program2-2 - passed.
+Testing program2-2 - passed.
+Testing program2-2 - passed.
+Testing program2-2 - passed.
+-----

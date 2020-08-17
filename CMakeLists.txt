@@ -92,10 +92,23 @@ include_directories(${googleTestDir}/googlemock/include)
 #add_executable(arithmetic workshop/week2/arithmetic.cpp)
 #add_executable(T005 tmp/T005.cpp)
 #add_executable(function-1-1 workshop/week3/function-1-1.cpp)
-set(workshop_3_test
-        Test/workshop-3-test.cpp
-        workshop/week3/function-1-1.cpp
-        workshop/week3/function-1-2.cpp)
-add_executable(GTest ${workshop_3_test})
+#set(workshop_3_test
+#        Test/workshop-3-test.cpp
+#        workshop/week3/function-1-1.cpp
+#        workshop/week3/function-1-2.cpp)
+#add_executable(GTest ${workshop_3_test})
+
+set(practical04_test
+        Practical/Test/practical04_test.cpp
+        Practical/week4/function-1-1.cpp
+        Practical/week4/function-1-3.cpp
+        Practical/week4/function-1-4.cpp
+        Practical/week4/function-2-1.cpp
+        Practical/week4/function-2-2.cpp
+        )
+add_executable(GTest ${practical04_test})
 target_link_libraries(GTest gtest gtest_main)
 target_link_libraries(GTest gmock gmock_main)
+
+add_executable(function-1-2 Practical/week4/function-1-2.cpp)
+#add_executable(T006 tmp/T006.cpp)
