@@ -8,7 +8,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ## [C++核心编程](2.C%2B%2B核心编程/C%2B%2B核心编程)
 
-## [C++高级编程](Cpp/3.C%2B%2B提高编程/C%2B%2B提高编程)
+## [C++高级编程](3.C%2B%2B提高编程/C%2B%2B提高编程)
 
 ### Support or Contact
 
