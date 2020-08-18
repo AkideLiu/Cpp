@@ -79,6 +79,8 @@ TEST(prac4,q1_3){
         EXPECT_EQ(old_array[i],new_array[i]);
         // cout << old_array[i] << " || "<< new_array[i] << endl;
     }
+    delete [] old_array;
+    delete [] new_array;
 }
 
 TEST(prac4,q1_4){
@@ -97,6 +99,8 @@ TEST(prac4,q1_4){
         EXPECT_EQ(old_array[i],new_array[i]);
         // cout << old_array[i] << " || "<< new_array[i] << endl;
     }
+    delete[] old_array;
+    delete[] new_array;
 
 }
 
@@ -114,6 +118,7 @@ TEST(prac4,q2_1){
         print_sevens(array, n);
         string output = testing::internal::GetCapturedStdout();
 
+        delete[] array;
 
         // use stringstream to split enter (computer key)
         // https://www.shuzhiduo.com/A/6pdDOj0y5w/

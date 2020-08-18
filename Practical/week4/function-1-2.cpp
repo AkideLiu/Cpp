@@ -27,7 +27,7 @@ int main()
 
     a[1] = 42;
     cout << "Value of second element in b " << b[1] << endl;
-
+    delete[] b;
     return 0;
 
     /*  the shallow copy is different than the deep copy
