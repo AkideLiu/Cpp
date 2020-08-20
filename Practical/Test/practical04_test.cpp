@@ -9,6 +9,8 @@
 #include <gtest/gtest.h>
 #include <cstdlib>
 #include <random>
+#include <algorithm>
+#include <climits>
 
 using namespace std;
 
