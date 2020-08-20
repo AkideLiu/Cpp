@@ -45,7 +45,9 @@ string random_string()
     return str.substr(0, 5);    // assumes 32 < number of characters in str
 }
 
-TEST(prac4,q1_1) {
+//NOLINT : https://www.programmersought.com/article/77252032600/
+
+TEST(prac4,q1_1) /* NOLINT */ {
     int n = 3;
     string first_array[3][2] = {};
     string second_array[3][2] = {};
@@ -66,7 +68,7 @@ TEST(prac4,q1_1) {
     }
 }
 
-TEST(prac4,q1_3){
+TEST(prac4,q1_3) /* NOLINT */ {
     int n = 10;
     int *old_array = new int[n];
     int *new_array = new int[n];
@@ -85,7 +87,7 @@ TEST(prac4,q1_3){
     delete [] new_array;
 }
 
-TEST(prac4,q1_4){
+TEST(prac4,q1_4) /* NOLINT */ {
     int n = 10;
     auto *old_array = new double[n];
     auto *new_array = new double[n];
@@ -106,7 +108,7 @@ TEST(prac4,q1_4){
 
 }
 
-TEST(prac4,q2_1){
+TEST(prac4,q2_1) /* NOLINT */ {
     for (int i = 0; i < 5; ++i) {
         int n = rand() % 100;
         int *array = new int[n];
@@ -131,15 +133,15 @@ TEST(prac4,q2_1){
             arr.push_back(final_output);
         }
 
-        for(size_t k=0; k<arr.size(); k++) {
-            // cout << arr[k] << endl;
-            EXPECT_TRUE(stoi(arr[k]) % 7 == 0);
+        for(auto & k : arr) {
+            // cout << k << endl;
+            EXPECT_TRUE(stoi(k) % 7 == 0);
         }
 
     }
 }
 
-TEST(prac4,q2_2_T1){
+TEST(prac4,q2_2_T1) /* NOLINT */ {
 
     // test for all negative numbers in array
     // result should be 0
@@ -152,7 +154,7 @@ TEST(prac4,q2_2_T1){
 
 }
 
-TEST(prac4,q2_2_T2){
+TEST(prac4,q2_2_T2) /* NOLINT */ {
     // test for given example
     vector<int> array;
     array = {31, -41, 59, 26, -53, 58, 97, -93, -23, 84};
@@ -163,7 +165,7 @@ TEST(prac4,q2_2_T2){
 
 // check function found at : https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
 
-int maxSubArraySum(int a[], int size)
+int maxSubArraySum(const int a[], int size)
 {
     int max_so_far = INT_MIN, max_ending_here = 0;
 
@@ -179,12 +181,13 @@ int maxSubArraySum(int a[], int size)
     return max_so_far;
 }
 
-TEST(prac4,q2_2_T3){
+TEST(prac4,q2_2_T3) /* NOLINT */ {
 
     //test for 5 unknown case and correct by check function.
     for (int i = 0; i < 5; ++i) {
         vector<int> array;
         int length = rand() % 10;
+        array.reserve(length);
         for (int j = 0; j < length; ++j) {
             // random number in range of -100 to 100
             array.push_back(rand() % 200 - 100);
@@ -201,6 +204,10 @@ TEST(prac4,q2_2_T3){
 }
 
 int main(int argc, char **argv) {
+
+    // rand seed : https://www.geeksforgeeks.org/rand-and-srand-in-ccpp/
+    // Use current time as seed for random generator
+    srand(time(nullptr));
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
 }
