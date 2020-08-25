@@ -20,6 +20,7 @@ TEST(workshop4,q1_1){
 TEST(workshop4,q4_1){
     int array[4] = {1,2,3,4};
     int * ptr_array = array;
-    int a = secondSmallestSum(ptr_array,4);
-    EXPECT_EQ(a,2);
+    // cout << a << endl;
+    EXPECT_EQ(secondSmallestSum(ptr_array,4),2);
+    delete ptr_array;
 }
