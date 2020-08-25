@@ -98,15 +98,15 @@ include_directories(${googleTestDir}/googlemock/include)
 #        workshop/week3/function-1-2.cpp)
 #add_executable(GTest ${workshop_3_test})
 
-set(practical04_test
-        Practical/Test/practical04_test.cpp
-        Practical/week4/function-1-1.cpp
-        Practical/week4/function-1-3.cpp
-        Practical/week4/function-1-4.cpp
-        Practical/week4/function-2-1.cpp
-        Practical/week4/function-2-2.cpp
-        )
-add_executable(GTest ${practical04_test})
+#set(practical04_test
+#        Practical/Test/practical04_test.cpp
+#        Practical/week4/function-1-1.cpp
+#        Practical/week4/function-1-3.cpp
+#        Practical/week4/function-1-4.cpp
+#        Practical/week4/function-2-1.cpp
+#        Practical/week4/function-2-2.cpp
+#        )
+#add_executable(GTest ${practical04_test})
 
 #set(workshop4
 #        Test/workshop-4-test.cpp
@@ -119,8 +119,16 @@ add_executable(GTest ${practical04_test})
 #        workshop/week4/function-2-4.cpp
 #        )
 #add_executable(GTest ${workshop4})
+set(workshop5
+        Test/workshop-5-test.cpp
+        workshop/week5/function-1-1.cpp
+        workshop/week5/function-4-1.cpp
+)
+add_executable(GTest ${workshop5})
 target_link_libraries(GTest gtest gtest_main)
 target_link_libraries(GTest gmock gmock_main)
 
-add_executable(function-1-2 Practical/week4/function-1-2.cpp)
+#add_executable(function-1-2 Practical/week4/function-1-2.cpp)
+#add_executable(function-1-1 Practical/week5/function-1-1.cpp)
+
 #add_executable(T006 tmp/T006.cpp)
