@@ -128,7 +128,17 @@ add_executable(GTest ${workshop5})
 target_link_libraries(GTest gtest gtest_main)
 target_link_libraries(GTest gmock gmock_main)
 
-#add_executable(function-1-2 Practical/week4/function-1-2.cpp)
-#add_executable(function-1-1 Practical/week5/function-1-1.cpp)
-
+add_executable(function-1-2 Practical/week4/function-1-2.cpp)
 #add_executable(T006 tmp/T006.cpp)
+
+
+add_executable(7.2.1 "SelfLearning/chapter 7/7.2.1.cpp")
+add_executable(7.4.1 "SelfLearning/chapter 7/7.4.1.cpp")
+add_executable(7.5.1 "SelfLearning/chapter 7/7.5.1.cpp")
+add_executable(7.6 "SelfLearning/chapter 7/7.6.cpp")
+add_executable(7.7 "SelfLearning/chapter 7/7.7.cpp")
+add_executable(7.8 "SelfLearning/chapter 7/7.8.cpp")
+add_executable(8.2 SelfLearning/chapter8/8.2.cpp)
+add_executable(8.4 SelfLearning/chapter8/8.4.cpp)
+add_executable(8.8.1 SelfLearning/chapter8/8.8.1.cpp)
+add_executable(8.8.2 SelfLearning/chapter8/8.8.2.cpp)
