@@ -122,8 +122,12 @@ include_directories(${googleTestDir}/googlemock/include)
 set(workshop5
         Test/workshop-5-test.cpp
         workshop/week5/function-1-1.cpp
+        workshop/week5/function-2-1.cpp
+        workshop/week5/function-3-1.cpp
+        workshop/week5/function-3-2.cpp
         workshop/week5/function-4-1.cpp
 )
+add_compile_definitions(GTest_ignore)
 add_executable(GTest ${workshop5})
 target_link_libraries(GTest gtest gtest_main)
 target_link_libraries(GTest gmock gmock_main)
