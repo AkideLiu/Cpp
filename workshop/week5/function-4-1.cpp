@@ -43,6 +43,10 @@ int secondSmallestSum(int *numbers,int length){
     }
 
     sort(newArray,newArray + new_array_index);
+    
+    int result = newArray[1];
 
-    return newArray[1];
+    delete[] newArray;
+
+    return result;
 }
