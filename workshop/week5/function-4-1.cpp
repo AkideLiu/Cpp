@@ -29,13 +29,7 @@ int secondSmallestSum(int *numbers,int length){
     // The number of all possible subarrays of an array of size N is N * (N + 1)/2. Let countSubarrays(N) = N * (N + 1)/2
     // https://www.geeksforgeeks.org/number-subarrays-maximum-value-given-range
     
-    // int *newArray = new int[length * (length + 1) / 2];
-
-    int newArray[255];
-
-    for (int i = 0; i < 255; ++i){
-        newArray[i] = 0;
-    }
+    int *newArray = new int[length * (length + 1) / 2];
 
     int new_array_index = 0;
 
