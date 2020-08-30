@@ -119,16 +119,28 @@ include_directories(${googleTestDir}/googlemock/include)
 #        workshop/week4/function-2-4.cpp
 #        )
 #add_executable(GTest ${workshop4})
-set(workshop5
-        Test/workshop-5-test.cpp
-        workshop/week5/function-1-1.cpp
-        workshop/week5/function-2-1.cpp
-        workshop/week5/function-3-1.cpp
-        workshop/week5/function-3-2.cpp
-        workshop/week5/function-4-1.cpp
-)
+#set(workshop5
+#        Test/workshop-5-test.cpp
+#        workshop/week5/function-1-1.cpp
+#        workshop/week5/function-2-1.cpp
+#        workshop/week5/function-3-1.cpp
+#        workshop/week5/function-3-2.cpp
+#        workshop/week5/function-4-1.cpp
+#)
+#add_executable(GTest ${workshop5})
+set(practical6_test
+        Practical/Test/practical06_test.cpp
+        Practical/week6/meerkat.h
+        Practical/week6/meerkat.cpp
+        Practical/week6/person.h
+        Practical/week6/person.cpp
+        Practical/week6/cart.h
+        Practical/week6/cart.cpp
+        Practical/week6/aircraft.h
+        Practical/week6/aircraft.cpp
+        )
+add_executable(GTest ${practical6_test})
 add_compile_definitions(GTest_ignore)
-add_executable(GTest ${workshop5})
 target_link_libraries(GTest gtest gtest_main)
 target_link_libraries(GTest gmock gmock_main)
 
@@ -150,7 +162,7 @@ target_link_libraries(GTest gmock gmock_main)
 #add_executable(function-3-1 tmp/prac-exam-02/function-3-1.cpp)
 #add_executable(function-3-2 tmp/prac-exam-02/function-3-2.cpp)
 #add_executable(function-4-1 tmp/prac-exam-02/function-4-1.cpp)
-add_executable(4.2.5.1 "SelfLearning/chapter 3/4.2.5.1.cpp")
-add_executable(4.2.6.1 "SelfLearning/chapter 3/4.2.6.1.cpp")
-add_executable(4.6.2 "SelfLearning/chapter 3/4.6.2.cpp")
-add_executable(4.6.8 "SelfLearning/chapter 3/4.6.8.cpp")
+#add_executable(4.2.5.1 "SelfLearning/chapter 3/4.2.5.1.cpp")
+#add_executable(4.2.6.1 "SelfLearning/chapter 3/4.2.6.1.cpp")
+#add_executable(4.6.2 "SelfLearning/chapter 3/4.6.2.cpp")
+#add_executable(4.6.8 "SelfLearning/chapter 3/4.6.8.cpp")
