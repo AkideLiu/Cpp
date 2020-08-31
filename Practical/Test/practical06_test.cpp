@@ -10,6 +10,8 @@
 #include <iostream>
 #include <vector>
 #include <random>
+#include <algorithm>
+
 
 #include "../week6/meerkat.h"
 #include "../week6/person.h"
