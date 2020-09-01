@@ -128,18 +128,26 @@ include_directories(${googleTestDir}/googlemock/include)
 #        workshop/week5/function-4-1.cpp
 #)
 #add_executable(GTest ${workshop5})
-set(practical6_test
-        Practical/Test/practical06_test.cpp
-        Practical/week6/meerkat.h
-        Practical/week6/meerkat.cpp
-        Practical/week6/person.h
-        Practical/week6/person.cpp
-        Practical/week6/cart.h
-        Practical/week6/cart.cpp
-        Practical/week6/aircraft.h
-        Practical/week6/aircraft.cpp
+#set(practical6_test
+#        Practical/Test/practical06_test.cpp
+#        Practical/week6/meerkat.h
+#        Practical/week6/meerkat.cpp
+#        Practical/week6/person.h
+#        Practical/week6/person.cpp
+#        Practical/week6/cart.h
+#        Practical/week6/cart.cpp
+#        Practical/week6/aircraft.h
+#        Practical/week6/aircraft.cpp
+#        )
+#add_executable(GTest ${practical6_test})
+set(workshop6_test
+        workshop/week6/Book.h
+        workshop/week6/Book.cpp
+        workshop/week6/Library.h
+        workshop/week6/Library.cpp
+        workshop/week6/main.cpp
         )
-add_executable(GTest ${practical6_test})
+add_executable(GTest ${workshop6_test})
 add_compile_definitions(GTest_ignore)
 target_link_libraries(GTest gtest gtest_main)
 target_link_libraries(GTest gmock gmock_main)
