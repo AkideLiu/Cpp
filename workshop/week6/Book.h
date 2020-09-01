@@ -13,7 +13,6 @@ public:
     Book();
     Book(string name,int id);
     string getName();
-    int getId();
-    ~Book();
+    int getId() const;
 };
 

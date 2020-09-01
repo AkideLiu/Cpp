@@ -9,6 +9,6 @@ string Book::getName(){
     return this->name;
 }
 
-int Book::getId(){
+int Book::getId() const{
     return this->id;
 }
