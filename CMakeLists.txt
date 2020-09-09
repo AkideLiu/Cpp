@@ -140,14 +140,22 @@ include_directories(${googleTestDir}/googlemock/include)
 #        Practical/week6/aircraft.cpp
 #        )
 #add_executable(GTest ${practical6_test})
-set(workshop6_test
-        workshop/week6/Book.h
-        workshop/week6/Book.cpp
-        workshop/week6/Library.h
-        workshop/week6/Library.cpp
-        workshop/week6/main.cpp
+#set(workshop6_test
+#        workshop/week6/Book.h
+#        workshop/week6/Book.cpp
+#        workshop/week6/Library.h
+#        workshop/week6/Library.cpp
+#        workshop/week6/main.cpp
+#        )
+#add_executable(GTest ${workshop6_test})
+set(prac_exam_03_pr3
+        practical/Test/practical_exam_03_PR3_test.cpp
+        Practical/practical_exam/exam3-PR3/Stock_item.cpp
+        Practical/practical_exam/exam3-PR3/Stock_item.h
+        practical/practical_exam/exam3-PR3/Store.h
+        practical/practical_exam/exam3-PR3/Store.cpp
         )
-add_executable(GTest ${workshop6_test})
+add_executable(GTest ${prac_exam_03_pr3})
 add_compile_definitions(GTest_ignore)
 target_link_libraries(GTest gtest gtest_main)
 target_link_libraries(GTest gmock gmock_main)
@@ -174,7 +182,7 @@ target_link_libraries(GTest gmock gmock_main)
 #add_executable(4.2.6.1 "SelfLearning/chapter 3/4.2.6.1.cpp")
 #add_executable(4.6.2 "SelfLearning/chapter 3/4.6.2.cpp")
 #add_executable(4.6.8 "SelfLearning/chapter 3/4.6.8.cpp")
-add_executable(5a2b703dc5e2845c0900005a SelfLearning/codewars/5a2b703dc5e2845c0900005a.cpp)
-add_executable(55a70521798b14d4750000a4 SelfLearning/codewars/55a70521798b14d4750000a4.cpp)
-add_executable(563e320cee5dddcf77000158 SelfLearning/codewars/563e320cee5dddcf77000158.cpp)
-add_executable(563089b9b7be03472d00002b SelfLearning/codewars/563089b9b7be03472d00002b.cpp)
+#add_executable(5a2b703dc5e2845c0900005a SelfLearning/codewars/5a2b703dc5e2845c0900005a.cpp)
+#add_executable(55a70521798b14d4750000a4 SelfLearning/codewars/55a70521798b14d4750000a4.cpp)
+#add_executable(563e320cee5dddcf77000158 SelfLearning/codewars/563e320cee5dddcf77000158.cpp)
+#add_executable(563089b9b7be03472d00002b SelfLearning/codewars/563089b9b7be03472d00002b.cpp)
