@@ -9,12 +9,12 @@
 #include "Condo.h"
 
 Condo::Condo() {
-
+    
 }
 
 Condo::Condo(int capacity) {
     this->capacity = capacity;
-    unitArray.reserve(capacity);
+    // unitArray.reserve(capacity);
 }
 
 int Condo::get_capacity() {
