@@ -11,7 +11,7 @@
 Store::Store() {}
 
 Store::Store(int capacity) : capacity(capacity) {
-    stockList.reserve(capacity);
+    // stockList.reserve(capacity);
 }
 
 int Store::get_total_stock_count() {

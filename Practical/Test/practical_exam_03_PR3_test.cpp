@@ -76,3 +76,13 @@ TEST(practical_exam_03_pr3,part2){
     EXPECT_EQ(newStock[0].get_description(),description_array[0]);
     // delete [] newStock;
 }
+
+
+int main(int argc, char **argv) {
+
+    // rand seed : https://www.geeksforgeeks.org/rand-and-srand-in-ccpp/
+    // Use current time as seed for random generator
+    srand(time(nullptr));
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
+}
