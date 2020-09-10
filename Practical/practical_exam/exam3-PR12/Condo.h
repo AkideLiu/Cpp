@@ -35,7 +35,7 @@ public:
     ~Condo();
 
 private:
-    int capacity;
+    int capacity = 10;
     vector<Unit> unitArray;
 };
 
