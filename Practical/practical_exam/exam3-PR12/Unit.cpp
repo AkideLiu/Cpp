@@ -7,3 +7,26 @@
 //
 
 #include "Unit.h"
+
+Unit::Unit() {
+
+}
+
+Unit::Unit(int bedrooms, double space, int price) {
+
+    this->bedrooms = bedrooms;
+    this->space = space;
+    this->price = price;
+}
+
+int Unit::get_bedrooms() {
+    return this->bedrooms;
+}
+
+int Unit::get_value() {
+    return this->price;
+}
+
+double Unit::get_area() {
+    return this->space;
+}

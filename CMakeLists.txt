@@ -148,14 +148,22 @@ include_directories(${googleTestDir}/googlemock/include)
 #        workshop/week6/main.cpp
 #        )
 #add_executable(GTest ${workshop6_test})
-set(prac_exam_03_pr3
-        practical/Test/practical_exam_03_PR3_test.cpp
-        Practical/practical_exam/exam3-PR3/Stock_item.cpp
-        Practical/practical_exam/exam3-PR3/Stock_item.h
-        practical/practical_exam/exam3-PR3/Store.h
-        practical/practical_exam/exam3-PR3/Store.cpp
+#set(prac_exam_03_pr3
+#        practical/Test/practical_exam_03_PR3_test.cpp
+#        Practical/practical_exam/exam3-PR3/Stock_item.cpp
+#        Practical/practical_exam/exam3-PR3/Stock_item.h
+#        practical/practical_exam/exam3-PR3/Store.h
+#        practical/practical_exam/exam3-PR3/Store.cpp
+#        )
+#add_executable(GTest ${prac_exam_03_pr3})
+
+set(prac_exam_03_pr12
+        practical/practical_exam/exam3-PR12/Unit.h
+        practical/practical_exam/exam3-PR12/Unit.cpp
+        practical/practical_exam/exam3-PR12/Condo.h
+        practical/practical_exam/exam3-PR12/Condo.cpp
         )
-add_executable(GTest ${prac_exam_03_pr3})
+add_executable(GTest ${prac_exam_03_pr12})
 add_compile_definitions(GTest_ignore)
 target_link_libraries(GTest gtest gtest_main)
 target_link_libraries(GTest gmock gmock_main)
