@@ -148,14 +148,14 @@ include_directories(${googleTestDir}/googlemock/include)
 #        workshop/week6/main.cpp
 #        )
 #add_executable(GTest ${workshop6_test})
-set(prac_exam_03_pr3
-        practical/Test/practical_exam_03_PR3_test.cpp
-        Practical/practical_exam/exam3-PR3/Stock_item.cpp
-        Practical/practical_exam/exam3-PR3/Stock_item.h
-        practical/practical_exam/exam3-PR3/Store.h
-        practical/practical_exam/exam3-PR3/Store.cpp
-        )
-add_executable(GTest ${prac_exam_03_pr3})
+#set(prac_exam_03_pr3
+#        practical/Test/practical_exam_03_PR3_test.cpp
+#        Practical/practical_exam/exam3-PR3/Stock_item.cpp
+#        Practical/practical_exam/exam3-PR3/Stock_item.h
+#        practical/practical_exam/exam3-PR3/Store.h
+#        practical/practical_exam/exam3-PR3/Store.cpp
+#        )
+#add_executable(GTest ${prac_exam_03_pr3})
 
 #set(prac_exam_03_pr12
 #        practical/practical_exam/exam3-PR12/Unit.h
@@ -164,6 +164,24 @@ add_executable(GTest ${prac_exam_03_pr3})
 #        practical/practical_exam/exam3-PR12/Condo.cpp
 #        )
 #add_executable(GTest ${prac_exam_03_pr12})
+
+set(major_project
+        practical/Major/Test/project_test.cpp
+        Practical/Major/src/People.cpp
+        Practical/Major/src/Storage.cpp
+        Practical/Major/src/Student.cpp
+        Practical/Major/src/Subject.cpp
+        Practical/Major/src/Teacher.cpp
+        Practical/Major/src/Tutor.cpp
+        )
+add_executable(GTest ${major_project})
+
+#set(workshop8_test
+#        workshop/week8/Animal.cpp
+#        workshop/week8/Hunter.cpp
+#        workshop/week8/Vegie.cpp
+#        )
+#add_executable(GTest ${workshop8_test})
 add_compile_definitions(GTest_ignore)
 target_link_libraries(GTest gtest gtest_main)
 target_link_libraries(GTest gmock gmock_main)
