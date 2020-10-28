@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include "animal.h"
+#include <vector>
 
 
 using namespace std;
@@ -34,6 +35,9 @@ private:
     string name ;                          // the zoo's name
     int number_of_animals ;                // the number of animals in the zoo
     animal **animals ;                      // the zoo's animals
+
+    vector<animal*> tmp;
+
 };
 
 

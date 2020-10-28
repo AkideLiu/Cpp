@@ -28,23 +28,21 @@ zoo::zoo(string n, int cows, int lions) {
 
     this->name = n;
 
-    this->number_of_animals = cows + lions;
-
-    animals = new animal *[number_of_animals];
-
-    for (int i = 0; i < number_of_animals; ++i) {
-        if (i < cows) {
-            animals[i] = new vegie("Daisy", 100);
-        } else {
-            animals[i] = new vegie("Daisy", 100);
-        }
+    for (int i = 0; i < cows; ++i) {
+        tmp.push_back(new vegie("Daisy", 100));
     }
 
+    for (int i = 0; i < lions; ++i) {
+        tmp.push_back(new hunter("Clarence", 50));
+    }
 
+    this->animals = &tmp[0];
+
+    this->number_of_animals = cows + lions;
 
 }
 
 zoo::~zoo() {
-    delete animals;
+    // delete animals;
 }
 
