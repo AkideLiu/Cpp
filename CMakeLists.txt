@@ -165,16 +165,30 @@ include_directories(${googleTestDir}/googlemock/include)
 #        )
 #add_executable(GTest ${prac_exam_03_pr12})
 
-set(major_project
-        practical/Major/Test/project_test.cpp
-        Practical/Major/src/People.cpp
-        Practical/Major/src/Storage.cpp
-        Practical/Major/src/Student.cpp
-        Practical/Major/src/Subject.cpp
-        Practical/Major/src/Teacher.cpp
-        Practical/Major/src/Tutor.cpp
+#set(major_project
+#        practical/Major/Test/project_test.cpp
+#        Practical/Major/src/People.cpp
+#        Practical/Major/src/Storage.cpp
+#        Practical/Major/src/Student.cpp
+#        Practical/Major/src/Subject.cpp
+#        Practical/Major/src/Teacher.cpp
+#        Practical/Major/src/Tutor.cpp
+#        )
+
+#set(exe
+#        tmp/T007.cpp
+#        )
+
+set(exe
+        workshop/week12/animal.cpp
+        workshop/week12/hunter.cpp
+        workshop/week12/vegie.cpp
+        workshop/week12/zoo.cpp
+        workshop/week12/sort_by_animalID.cpp
+        workshop/week12/sort_by_name.cpp
         )
-add_executable(GTest ${major_project})
+
+add_executable(GTest ${exe})
 
 #set(workshop8_test
 #        workshop/week8/Animal.cpp

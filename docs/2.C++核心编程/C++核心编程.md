@@ -917,7 +917,7 @@ int main() {
 //学生类
 class Student {
 public:
-	void setName(string name) {
+	void set_name(string name) {
 		m_name = name;
 	}
 	void setID(int id) {
@@ -935,7 +935,7 @@ public:
 int main() {
 
 	Student stu;
-	stu.setName("德玛西亚");
+	stu.set_name("德玛西亚");
 	stu.setID(250);
 	stu.showStudent();
 
@@ -1089,10 +1089,10 @@ class Person {
 public:
 
 	//姓名设置可读可写
-	void setName(string name) {
+	void set_name(string name) {
 		m_Name = name;
 	}
-	string getName()
+	string get_name()
 	{
 		return m_Name;
 	}
@@ -1129,8 +1129,8 @@ int main() {
 
 	Person p;
 	//姓名设置
-	p.setName("张三");
-	cout << "姓名： " << p.getName() << endl;
+	p.set_name("张三");
+	cout << "姓名： " << p.get_name() << endl;
 
 	//年龄设置
 	p.setAge(50);

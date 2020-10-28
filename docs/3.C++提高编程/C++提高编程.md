@@ -3546,7 +3546,7 @@ int main() {
 
 **算法：**
 
-* `sort(iterator beg, iterator end)`  //对beg和end区间内元素进行排序
+* `sort_by_animalID(iterator beg, iterator end)`  //对beg和end区间内元素进行排序
 
 
 
@@ -3577,7 +3577,7 @@ void test01()
 	d.push_front(200);
 
 	printDeque(d);
-	sort(d.begin(), d.end());
+	sort_by_animalID(d.begin(), d.end());
 	printDeque(d);
 
 }
@@ -3681,7 +3681,7 @@ void setScore(vector<Person>&v)
 		//cout << endl;
 
 		//排序
-		sort(d.begin(), d.end());
+		sort_by_animalID(d.begin(), d.end());
 
 		//去除最高和最低分
 		d.pop_back();
@@ -4542,7 +4542,7 @@ int main() {
 **函数原型：**
 
 * `reverse();`   //反转链表
-* `sort();`        //链表排序
+* `sort_by_animalID();`        //链表排序
 
 
 
@@ -4579,10 +4579,10 @@ void test01()
 	printList(L);
 
 	//排序
-	L.sort(); //默认的排序规则 从小到大
+	L.sort_by_animalID(); //默认的排序规则 从小到大
 	printList(L);
 
-	L.sort(myCompare); //指定规则，从大到小
+	L.sort_by_animalID(myCompare); //指定规则，从大到小
 	printList(L);
 }
 
@@ -4599,7 +4599,7 @@ int main() {
 总结：
 
 * 反转   --- reverse
-* 排序   --- sort （成员函数）
+* 排序   --- sort_by_animalID （成员函数）
 
 
 
@@ -4675,7 +4675,7 @@ void test01() {
 	}
 
 	cout << "---------------------------------" << endl;
-	L.sort(ComparePerson); //排序
+	L.sort_by_animalID(ComparePerson); //排序
 
 	for (list<Person>::iterator it = L.begin(); it != L.end(); it++) {
 		cout << "姓名： " << it->m_Name << " 年龄： " << it->m_Age 
@@ -6207,7 +6207,7 @@ void test01()
 	v.push_back(50);
 
 	//默认从小到大
-	sort(v.begin(), v.end());
+	sort_by_animalID(v.begin(), v.end());
 	for (vector<int>::iterator it = v.begin(); it != v.end(); it++)
 	{
 		cout << *it << " ";
@@ -6216,7 +6216,7 @@ void test01()
 	cout << "----------------------------" << endl;
 
 	//使用函数对象改变算法策略，排序从大到小
-	sort(v.begin(), v.end(), MyCompare());
+	sort_by_animalID(v.begin(), v.end(), MyCompare());
 	for (vector<int>::iterator it = v.begin(); it != v.end(); it++)
 	{
 		cout << *it << " ";
@@ -6390,9 +6390,9 @@ void test01()
 	cout << endl;
 
 	//自己实现仿函数
-	//sort(v.begin(), v.end(), MyCompare());
+	//sort_by_animalID(v.begin(), v.end(), MyCompare());
 	//STL内建仿函数  大于仿函数
-	sort(v.begin(), v.end(), greater<int>());
+	sort_by_animalID(v.begin(), v.end(), greater<int>());
 
 	for (vector<int>::iterator it = v.begin(); it != v.end(); it++) {
 		cout << *it << " ";
@@ -7328,7 +7328,7 @@ int main() {
 
 **算法简介：**
 
-- `sort`             //对容器内元素进行排序
+- `sort_by_animalID`             //对容器内元素进行排序
 - `random_shuffle`   //洗牌   指定范围内的元素随机调整次序
 - `merge `           // 容器元素合并，并存储到另一容器中
 - `reverse`       // 反转指定范围的元素
@@ -7337,7 +7337,7 @@ int main() {
 
 
 
-#### 5.3.1 sort
+#### 5.3.1 sort_by_animalID
 
 **功能描述：**
 
@@ -7349,7 +7349,7 @@ int main() {
 
 **函数原型：**
 
-- `sort(iterator beg, iterator end, _Pred);  `
+- `sort_by_animalID(iterator beg, iterator end, _Pred);  `
 
   // 按值查找元素，找到返回指定位置迭代器，找不到返回结束迭代器位置
 
@@ -7383,12 +7383,12 @@ void test01() {
 	v.push_back(40);
 
 	//sort默认从小到大排序
-	sort(v.begin(), v.end());
+	sort_by_animalID(v.begin(), v.end());
 	for_each(v.begin(), v.end(), myPrint);
 	cout << endl;
 
 	//从大到小排序
-	sort(v.begin(), v.end(), greater<int>());
+	sort_by_animalID(v.begin(), v.end(), greater<int>());
 	for_each(v.begin(), v.end(), myPrint);
 	cout << endl;
 }
