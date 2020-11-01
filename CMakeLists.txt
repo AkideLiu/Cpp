@@ -179,16 +179,30 @@ include_directories(${googleTestDir}/googlemock/include)
 #        tmp/T007.cpp
 #        )
 
+#workshop12
+
+#set(exe
+#        workshop/week12/animal.cpp
+#        workshop/week12/hunter.cpp
+#        workshop/week12/vegie.cpp
+#        workshop/week12/zoo.cpp
+#        workshop/week12/sort_by_animalID.cpp
+#        workshop/week12/sort_by_name.cpp
+#        )
+
+
+#final prepare
 set(exe
-        workshop/week12/animal.cpp
-        workshop/week12/hunter.cpp
-        workshop/week12/vegie.cpp
-        workshop/week12/zoo.cpp
-        workshop/week12/sort_by_animalID.cpp
-        workshop/week12/sort_by_name.cpp
+        Practical/Final\ prepare/Band.cpp
+        Practical/Final\ prepare/Metal.cpp
+        Practical/Final\ prepare/test.cpp
+        Practical/Final\ prepare/FuelFlowSensor.cpp
+        Practical/Final\ prepare/FuelRecordStation.cpp
+        Practical/Final\ prepare/Rocket.cpp
         )
 
 add_executable(GTest ${exe})
+add_executable(q3 Practical/Final\ prepare/q3.cpp)
 
 #set(workshop8_test
 #        workshop/week8/Animal.cpp
